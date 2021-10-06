@@ -77,6 +77,15 @@
   margin-bottom: 2em;
 }
 
+.plan-details {
+  display: flex;
+}
+
+.music-icon {
+  margin: 1em;
+  width: 3em;
+}
+
 .plan-text {
   display: flex;
   flex-direction: column;
