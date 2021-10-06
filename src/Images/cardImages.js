@@ -2,7 +2,7 @@ import React from "react";
 
 export const BackgroundPatternDesktop = (props) => {
   return (
-    <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 437" >
+    <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 437" preserveAspectRatio="slice" >
       <path
         fill="#D6E1FF"
         fillRule="evenodd"
@@ -14,7 +14,7 @@ export const BackgroundPatternDesktop = (props) => {
 
 export const BackgroundPatternMobile = (props) => {
   return (
-    <svg {...props} xmlns="http://www.w3.org/2000/svg" width="375" height="194">
+    <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 194" preserveAspectRatio="slice" >
       <path
         fill="#D6E1FF"
         fillRule="evenodd"
@@ -31,7 +31,6 @@ export const HeroIllustration = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 450 220"
-      width="100%"
       preserveAspectRatio="slice"
     >
       <defs>
@@ -188,7 +187,7 @@ export const HeroIllustration = (props) => {
 
 export const MusicIcon = (props) => {
   return (
-    <svg {...props} xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+    <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" preserveAspectRatio="slice" >
       <g fill="none" fill-rule="evenodd">
         <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
         <path
