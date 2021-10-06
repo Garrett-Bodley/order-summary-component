@@ -19,6 +19,9 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 11px;
   text-align: center;
   z-index: 1;
