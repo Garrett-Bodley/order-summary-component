@@ -3,6 +3,7 @@ import "./ordersummary.css";
 import {
   BackgroundPatternDesktop,
   HeroIllustration,
+  MusicIcon,
 } from "./Images/cardImages";
 
 const OrderSummary = (props) => {
@@ -19,12 +20,17 @@ const OrderSummary = (props) => {
           <p className="card-title">Order Summary</p>
           <p className="card-description">
             You can now listen to millions of songs, audiobooks, and podcasts on
-            any device anywhere you like! Annual Plan $59.99/year Change Proceed
-            to Payment Cancel Order
+            any device anywhere you like!
           </p>
           <div className="selected-plan">
-            <b>Annual Plan</b>
-            <span>$59.99/year</span>
+            <MusicIcon />
+            <span className="plan-details">
+              <span className="plan-text">
+                <b>Annual Plan</b>
+                <span>$59.99/year</span>
+              </span>
+
+            </span>
             <a href="#">Change</a>
           </div>
           <button className="btn btn-primary">Proceed to Payment</button>
