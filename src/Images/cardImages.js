@@ -2,7 +2,7 @@ import React from "react";
 
 export const BackgroundPatternDesktop = (props) => {
   return (
-    <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 437" preserveAspectRatio="slice" >
+    <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 437" preserveAspectRatio="xMidYMin slice" width="100%">
       <path
         fill="#D6E1FF"
         fillRule="evenodd"
