@@ -2,7 +2,7 @@ import React from "react";
 
 export const BackgroundPatternDesktop = (props) => {
   return (
-    <svg {...props} xmlns="http://www.w3.org/2000/svg" width="1440" height="437">
+    <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 437" >
       <path
         fill="#D6E1FF"
         fillRule="evenodd"
@@ -30,8 +30,9 @@ export const HeroIllustration = (props) => {
       {...props}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="450"
-      height="220"
+      viewBox="0 0 450 220"
+      width="100%"
+      preserveAspectRatio="slice"
     >
       <defs>
         <path id="a" d="M0 0h450v220H0z" />
