@@ -28,7 +28,8 @@
   text-align: center;
   z-index: 1;
   max-width: 30em;
-  overflow: hidden;
+  max-height: 90%;
+  overflow: auto;
   border-radius: 1.5em;
   background-color: #ffffff;
   color: #7f879b;
