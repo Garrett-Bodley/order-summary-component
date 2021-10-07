@@ -34,7 +34,8 @@ svg {
   text-align: center;
   z-index: 1;
   max-height: 90%;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   border-radius: 1.25em;
   margin: 1.5em;
   background-color: #ffffff;
