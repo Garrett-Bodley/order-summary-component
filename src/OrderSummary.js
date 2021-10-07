@@ -8,6 +8,7 @@ import SelectedPlan from "./SelectedPlan";
 import Attribution from "./Attribution";
 
 const OrderSummary = (props) => {
+  const [attrVisible, setAttrVisible] = useState(false);
 
   const [attrVisible, setAttrVisible] = useState(false)
 
