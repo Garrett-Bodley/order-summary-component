@@ -76,6 +76,10 @@
     margin: 2em;
   }
 
+  .attribution-reveal {
+    margin: 5em 3em;
+  }
+
   .attribution a {
     color: hsl(245, 75%, 52%)
   }
