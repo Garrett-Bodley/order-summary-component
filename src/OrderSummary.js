@@ -5,6 +5,7 @@ import {
   HeroIllustration,
   MusicIcon,
 } from "./Images/cardImages";
+import SelectedPlan from "./SelectedPlan";
 
 const OrderSummary = (props) => {
   return (
@@ -22,17 +23,7 @@ const OrderSummary = (props) => {
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
           </p>
-          <div className="selected-plan">
-            <MusicIcon />
-            <span className="plan-details">
-              <span className="plan-text">
-                <b>Annual Plan</b>
-                <span>$59.99/year</span>
-              </span>
-
-            </span>
-            <a href="#">Change</a>
-          </div>
+          <SelectedPlan />
           <button className="btn btn-primary">Proceed to Payment</button>
           <button className="btn btn-secondary">Cancel Order</button>
         </section>
