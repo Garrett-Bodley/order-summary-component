@@ -17,7 +17,7 @@ const Attribution = (props) => {
       <div className="attribution-reveal" onClick={toggleVisibility}>
         <CursorClick width="100%" />
       </div>
-      <div {...props} className="attribution" style={style}>
+      <div className="attribution" style={style}>
         <div className="attribution-text">
           <p>
             Challenge by{" "}
