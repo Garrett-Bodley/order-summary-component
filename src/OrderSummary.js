@@ -7,7 +7,7 @@ import {
 } from "./Images/cardImages";
 import SelectedPlan from "./SelectedPlan";
 import Attribution from "./Attribution";
-import { isMobile } from "react-device-detect";
+import { isBrowser } from "react-device-detect";
 
 const OrderSummary = (props) => {
   const [attrVisible, setAttrVisible] = useState(false);
@@ -23,13 +23,13 @@ const OrderSummary = (props) => {
   return (
     <div className="container">
       <div className="background">
-        {isMobile ? (
+        {!isBrowser ? (
           <BackgroundPatternMobile className="background-pattern" />
         ) : (
           <BackgroundPatternDesktop className="background-pattern" />
         )}
       </div>
-      <article className="card" style={attrVisible && isMobile ? style : null}>
+      <article className="card" style={attrVisible && !isBrowser ? style : null}>
         <div className="card-hero">
           <HeroIllustration />
         </div>
