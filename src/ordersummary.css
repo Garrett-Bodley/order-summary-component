@@ -129,7 +129,7 @@
 .btn-secondary {
   color: hsl(224, 23%, 55%);
   background: transparent;
-  color: #7f879b;
+  padding-top: 1em;
 }
 
 @media only screen and (min-width: 376px) {
