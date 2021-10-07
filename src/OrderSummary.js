@@ -32,7 +32,7 @@ const OrderSummary = (props) => {
       </div>
       <article className="card" style={attrVisible && isMobile ? style : null}>
         <div className="card-hero">
-          <HeroIllustration/>
+          <HeroIllustration />
         </div>
         <section className="card-content">
           <p className="card-title">Order Summary</p>
