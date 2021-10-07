@@ -1,13 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import "./ordersummary.css";
 import {
   BackgroundPatternDesktop,
   HeroIllustration,
-  MusicIcon,
 } from "./Images/cardImages";
 import SelectedPlan from "./SelectedPlan";
+import Attribution from "./Attribution";
 
 const OrderSummary = (props) => {
+
+  const [attrVisible, setAttrVisible] = useState(false)
+
+  const toggleAttrVis = () => {
+    setAttrVisible(!attrVisible)
+  }
+
   return (
     <div className="container">
       <div className="background">
@@ -28,6 +35,7 @@ const OrderSummary = (props) => {
           <button className="btn btn-secondary">Cancel Order</button>
         </section>
       </article>
+      <Attribution isVisible={attrVisible} toggleVisibility={toggleAttrVis} />
     </div>
   );
 };
