@@ -6,6 +6,7 @@ import {
 } from "./Images/cardImages";
 import SelectedPlan from "./SelectedPlan";
 import Attribution from "./Attribution";
+import { isMobile } from "react-device-detect";
 
 const OrderSummary = (props) => {
   const [attrVisible, setAttrVisible] = useState(false);
