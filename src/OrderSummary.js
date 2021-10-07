@@ -24,7 +24,11 @@ const OrderSummary = (props) => {
   return (
     <div className="container">
       <div className="background">
-        <BackgroundPatternDesktop className="background-pattern" />
+        {isMobile ? (
+          <BackgroundPatternMobile className="background-pattern" />
+        ) : (
+          <BackgroundPatternDesktop className="background-pattern" />
+        )}
       </div>
       <article className="card">
         <div className="card-hero">
