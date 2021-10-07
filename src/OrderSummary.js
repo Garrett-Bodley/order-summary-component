@@ -13,8 +13,12 @@ const OrderSummary = (props) => {
   const [attrVisible, setAttrVisible] = useState(false)
 
   const toggleAttrVis = () => {
-    setAttrVisible(!attrVisible)
-  }
+    setAttrVisible(!attrVisible);
+  };
+
+  const style = {
+    transform: "translateY(-5em)",
+  };
 
   return (
     <div className="container">
