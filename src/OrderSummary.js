@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import "./ordersummary.css";
 import {
   BackgroundPatternDesktop,
+  BackgroundPatternMobile,
   HeroIllustration,
 } from "./Images/cardImages";
 import SelectedPlan from "./SelectedPlan";
@@ -10,8 +11,6 @@ import { isMobile } from "react-device-detect";
 
 const OrderSummary = (props) => {
   const [attrVisible, setAttrVisible] = useState(false);
-
-  const [attrVisible, setAttrVisible] = useState(false)
 
   const toggleAttrVis = () => {
     setAttrVisible(!attrVisible);
