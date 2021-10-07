@@ -156,7 +156,51 @@ svg {
 
 @media only screen and (min-width: 376px) {
   .card {
-    max-width: 30em;
+    max-width: 25em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .card {
+    font-size: 16px;
+    max-width: 30%;
+  }
+
+  .card-title {
+    padding-top: 1em;
+    font-size: 26px;
+  }
+
+  .card-content {
+    padding: 0 1em 1em 1em;
+  }
+
+  .card-description {
+    padding: 1em;
+    font-weight: 500;
+  }
+
+  .selected-plan {
+    padding: .5em;
+    margin-bottom: 1em;
+  }
+
+  .plan-text-primary {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .plan-text-secondary { 
+    font-size: 16px;
+  }
+
+  .card-link {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    margin: 1em 0;
+    font-weight: 700;
   }
 
   .card-content {
@@ -165,5 +209,9 @@ svg {
 
   .btn {
     padding: 1em 0 1em 0;
+  }
+
+  .btn-secondary {
+    padding-bottom: 0;
   }
 }
