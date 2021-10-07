@@ -27,7 +27,7 @@
   font-weight: 500;
   text-align: center;
   z-index: 1;
-  max-width: 30em;
+  max-width: 90%;
   max-height: 90%;
   overflow: auto;
   border-radius: 1.5em;
@@ -46,7 +46,7 @@
 }
 
 .card-content {
-  padding: 0 3em 3em 3em;
+  padding: 0 2em 2em 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,10 +106,10 @@
   border: 0px;
   outline: none;
   font-weight: 600;
-  border-radius: .75em;
+  border-radius: 0.75em;
   width: 100%;
-  padding: 1em 0 1em 0;
-  margin: .25em;
+  padding: 1.5em 0 1.5em 0;
+  margin: 0.25em;
 }
 
 .btn-primary {
@@ -126,4 +126,18 @@
 .btn-secondary {
   background: transparent;
   color: #7f879b;
+}
+
+@media only screen and (min-width: 376px) {
+  .card {
+    max-width: 30em;
+  }
+
+  .card-content {
+    padding: 0 3em 3em 3em;
+  }
+
+  .btn {
+    padding: 1em 0 1em 0;
+  }
 }
