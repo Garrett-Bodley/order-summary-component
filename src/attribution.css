@@ -1,0 +1,86 @@
+.attribution-reveal{
+  background-color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 4em 2em;
+  width: 3em;
+  padding: .5em;
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+  box-shadow:
+    0.1px 0.9px 0.7px rgba(49, 42, 111, 0.07),
+    0.3px 2.5px 1.9px rgba(49, 42, 111, 0.1),
+    0.6px 6px 4.5px rgba(49, 42, 111, 0.13),
+    2px 20px 15px rgba(49, 42, 111, 0.2)
+  ;
+
+}
+
+.attribution-reveal:active svg {
+  fill: #756bf1;
+}
+
+.attribution-reveal svg {
+  display: block;
+  fill: hsl(245, 75%, 52%);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  margin: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 20em;
+  padding: 1.5em;
+  border-radius: 1em;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow:
+    0.2px 2.3px 1.4px rgba(49, 42, 111, 0.056),
+    0.6px 6.4px 3.8px rgba(49, 42, 111, 0.08),
+    1.5px 15.4px 9px rgba(49, 42, 111, 0.104),
+    5px 50px 30px rgba(49, 42, 111, 0.16)
+  ;
+  z-index: 3;
+  will-change: right;
+}
+/* 56, 41, 224 */
+/* 40, 36, 76 */
+/* 49, 42, 111 */
+
+.attribution > p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.attribution-hide {
+  cursor: pointer;
+  width: 2em;
+}
+
+.attribution-hide svg {
+  fill: hsl(245, 75%, 52%);
+}
+
+.attribution-hide:active svg {
+  fill: #756bf1;
+}
+
+@media only screen and (min-width: 376px) {
+  .attribution {
+    margin: 2em;
+  }
+
+  .attribution a {
+    color: hsl(245, 75%, 52%)
+  }
+
+  .attribution a:visited {
+    color: rgb(85, 26, 139);
+  }
+}
