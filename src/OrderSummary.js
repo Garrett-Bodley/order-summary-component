@@ -17,7 +17,7 @@ const OrderSummary = (props) => {
   };
 
   const style = {
-    transform: "translateY(-5em)",
+    transform: "translateY(-10em)",
   };
 
   return (
