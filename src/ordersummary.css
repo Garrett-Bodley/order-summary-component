@@ -123,8 +123,7 @@
     0.3px 2.5px 1.9px rgba(56, 41, 224, 0.1),
     0.6px 6px 4.5px rgba(56, 41, 224, 0.13),
     2px 20px 15px rgba(56, 41, 224, 0.2);
-  font-weight: 700;
-  margin: 1em;
+  margin: .75em 0 .75em 0;
 }
 
 .btn-secondary {
