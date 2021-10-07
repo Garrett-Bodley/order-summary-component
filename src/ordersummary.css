@@ -126,6 +126,7 @@
 
 .btn-secondary {
   color: hsl(224, 23%, 55%);
+  font-weight: 700;
   background: transparent;
   padding-top: 1em;
 }
