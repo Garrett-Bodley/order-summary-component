@@ -30,7 +30,7 @@ const OrderSummary = (props) => {
           <BackgroundPatternDesktop className="background-pattern" />
         )}
       </div>
-      <article className="card">
+      <article className="card" style={attrVisible && isMobile ? style : null}>
         <div className="card-hero">
           <HeroIllustration/>
         </div>
