@@ -33,24 +33,25 @@ const OrderSummary = (props) => {
           <BackgroundPatternDesktop className="background-pattern" />
         )}
       </div>
-      <article
+      <section
+        role="main"
         className="card"
         style={!isBrowser ? style : null}
       >
         <div className="card-hero">
           <HeroIllustration />
         </div>
-        <section className="card-content">
-          <p className="card-title">Order Summary</p>
+        <article className="card-content">
+          <h2 role="banner" className="card-title">Order Summary</h2>
           <p className="card-description">
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
           </p>
           <SelectedPlan />
-          <button className="btn btn-primary">Proceed to Payment</button>
-          <button className="btn btn-secondary">Cancel Order</button>
-        </section>
-      </article>
+          <button role="form" aria-label="primary" className="btn btn-primary">Proceed to Payment</button>
+          <button role="form" aria-label="secondary" className="btn btn-secondary">Cancel Order</button>
+        </article>
+      </section>
       <Attribution isVisible={attrVisible} toggleVisibility={toggleAttrVis} />
     </div>
   );
