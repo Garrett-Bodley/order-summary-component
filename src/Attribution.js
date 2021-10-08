@@ -4,12 +4,14 @@ import { ArrowBarRight } from "@styled-icons/bootstrap/ArrowBarRight";
 import "./attribution.css";
 
 const Attribution = (props) => {
-  
-  const { isVisible, toggleVisibility } = props
+  const { isVisible, toggleVisibility } = props;
 
   const style = {
     right: isVisible ? 0 : "-25em",
-    transition: `right 500ms cubic-bezier(0.645, 0.045, 0.355, 1)`,
+    transition: isVisible
+      ? `right 500ms cubic-bezier(0.75, 0, 1, 1);`
+      : `right 500ms cubic-bezier(0.215, 0.61, 0.355, 1)`,
+    // Using juiced up ease-in and ease-out curves from https://www.joshwcomeau.com/animation/css-transitions/#custom-curves
   };
 
   return (
