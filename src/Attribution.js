@@ -1,7 +1,7 @@
 import React from "react";
+import "./attribution.css";
 import { CursorClick } from "@styled-icons/fluentui-system-filled/CursorClick";
 import { ArrowBarRight } from "@styled-icons/bootstrap/ArrowBarRight";
-import "./attribution.css";
 
 const Attribution = (props) => {
   const { isVisible, toggleVisibility } = props;
