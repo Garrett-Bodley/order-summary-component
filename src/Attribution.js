@@ -32,11 +32,10 @@ const Attribution = (props) => {
             >
               Frontend Mentor
             </a>
-            .
           </p>
           <p role="contentinfo">
             Coded by{" "}
-            <a role="navigation" aria-label="Developer site" href="https://github.com/Garrett-Bodley">Garrett Bodley</a>.
+            <a role="navigation" aria-label="Developer site" href="https://github.com/Garrett-Bodley">Garrett Bodley</a>
           </p>
         </div>
         <div role="form" className="attribution-hide">
