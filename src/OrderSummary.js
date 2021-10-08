@@ -17,7 +17,11 @@ const OrderSummary = (props) => {
   };
 
   const style = {
-    transform: "translateY(-10em)",
+    transform: attrVisible ? "translateY(-10em)" : null,
+    transition: !attrVisible
+      ? `transform 500ms cubic-bezier(0.75, 0, 1, 1);`
+      : `transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1)`,
+    // Using juiced up ease-in and ease-out curves from https://www.joshwcomeau.com/animation/css-transitions/#custom-curves
   };
 
   return (
@@ -29,7 +33,10 @@ const OrderSummary = (props) => {
           <BackgroundPatternDesktop className="background-pattern" />
         )}
       </div>
-      <article className="card" style={attrVisible && !isBrowser ? style : null}>
+      <article
+        className="card"
+        style={!isBrowser ? style : null}
+      >
         <div className="card-hero">
           <HeroIllustration />
         </div>
