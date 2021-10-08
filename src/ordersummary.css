@@ -94,6 +94,7 @@ svg {
 }
 
 .music-icon {
+  max-height: 48px;
   margin: 1em;
   width: 3em;
 }
