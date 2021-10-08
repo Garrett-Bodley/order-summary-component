@@ -12,7 +12,7 @@ const SelectedPlan = () => {
         </span>
 
       </span>
-      <a className="card-link" href="#">Change</a>
+      <button className="card-link">Change</button>
     </div>
   )
 }
