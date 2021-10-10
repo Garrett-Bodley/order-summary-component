@@ -8,6 +8,7 @@ import {
 import SelectedPlan from "./SelectedPlan";
 import Attribution from "./Attribution";
 import { isBrowser } from "react-device-detect";
+import {animated, config, useSpring} from 'react-spring'
 
 const OrderSummary = (props) => {
   const [attrVisible, setAttrVisible] = useState(false);
@@ -16,13 +17,10 @@ const OrderSummary = (props) => {
     setAttrVisible(!attrVisible);
   };
 
-  const style = {
-    transform: attrVisible ? "translateY(-10em)" : null,
-    transition: !attrVisible
-      ? `transform 500ms cubic-bezier(0.75, 0, 1, 1);`
-      : `transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1)`,
-    // Using juiced up ease-in and ease-out curves from https://www.joshwcomeau.com/animation/css-transitions/#custom-curves
-  };
+  const springStyle = useSpring({
+    y: attrVisible ? '-10em' : '0em',
+    config: config.stiff
+  })
 
   return (
     <div className="container">
@@ -33,10 +31,10 @@ const OrderSummary = (props) => {
           <BackgroundPatternDesktop className="background-pattern" />
         )}
       </div>
-      <section
+      <animated.section
         role="main"
         className="card"
-        style={!isBrowser ? style : null}
+        style={!isBrowser ? springStyle : null}
       >
         <div className="card-hero">
           <HeroIllustration />
@@ -51,7 +49,7 @@ const OrderSummary = (props) => {
           <button role="form" aria-label="primary" className="btn btn-primary">Proceed to Payment</button>
           <button role="form" aria-label="secondary" className="btn btn-secondary">Cancel Order</button>
         </article>
-      </section>
+      </animated.section>
       <Attribution isVisible={attrVisible} toggleVisibility={toggleAttrVis} />
     </div>
   );
