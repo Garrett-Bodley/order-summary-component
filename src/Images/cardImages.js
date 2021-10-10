@@ -31,7 +31,7 @@ export const HeroIllustration = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 450 220"
-      preserveAspectRatio="XMidYMin slice"
+      preserveAspectRatio="xMidYMin slice"
     >
       <defs>
         <path id="a" d="M0 0h450v220H0z" />
@@ -187,7 +187,7 @@ export const HeroIllustration = (props) => {
 
 export const MusicIcon = (props) => {
   return (
-    <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" preserveAspectRatio="XMidYMid slice" >
+    <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" preserveAspectRatio="xMidYMid slice" >
       <g fill="none" fillRule="evenodd">
         <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
         <path
