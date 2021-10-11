@@ -38,7 +38,6 @@ const Attribution = (props) => {
           <p>
             Coded by{" "}
             <a
-              aria-label="Developer site"
               href="https://github.com/Garrett-Bodley"
             >
               Garrett Bodley
