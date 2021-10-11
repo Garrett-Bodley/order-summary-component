@@ -39,7 +39,7 @@ const OrderSummary = (props) => {
           <HeroIllustration />
         </div>
         <article className="card-content">
-          <h1 className="card-title">Order Summary</h1>
+          <h2 className="card-title">Order Summary</h2>
           <p className="card-description">
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
