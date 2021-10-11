@@ -15,24 +15,19 @@ const Attribution = (props) => {
   return (
     <>
       <div
-        role="form"
-        aria-labelledby="show-attribution"
         className="attribution-reveal"
         onClick={toggleVisibility}
       >
-        <CursorClick width="100%" />
+        <CursorClick role="button" width="100%" />
       </div>
       <animated.div
-        role="complementary"
         className="attribution"
         style={springStyle}
       >
         <div className="attribution-text">
-          <p role="contentinfo">
+          <p>
             Challenge by{" "}
             <a
-              aria-label="Challenge source"
-              role="navigation"
               href="https://www.frontendmentor.io?ref=challenge"
               target="_blank"
               rel="noreferrer"
@@ -40,10 +35,9 @@ const Attribution = (props) => {
               Frontend Mentor
             </a>
           </p>
-          <p role="contentinfo">
+          <p>
             Coded by{" "}
             <a
-              role="navigation"
               aria-label="Developer site"
               href="https://github.com/Garrett-Bodley"
             >
@@ -51,8 +45,8 @@ const Attribution = (props) => {
             </a>
           </p>
         </div>
-        <div role="form" className="attribution-hide">
-          <ArrowBarRight width="100%" onClick={toggleVisibility} />
+        <div className="attribution-hide">
+          <ArrowBarRight role="button" width="100%" onClick={toggleVisibility} />
         </div>
       </animated.div>
     </>
