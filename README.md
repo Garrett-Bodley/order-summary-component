@@ -8,6 +8,8 @@
 
 > A challenge from Frontend Mentor  to build out an order summary card component and get it looking as close to the design as possible.
 
+### 🏠 [Homepage](https://www.frontendmentor.io/solutions/order-summary-component-wcomplex-shadows-and-animated-attribution-9EaCGKLti)
+
 ### ✨ [Demo](https://xenodochial-thompson-79205a.netlify.app/)
 
 ## Install
