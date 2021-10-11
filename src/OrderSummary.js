@@ -31,7 +31,7 @@ const OrderSummary = (props) => {
           <BackgroundPatternDesktop className="background-pattern" />
         )}
       </div>
-      <animated.section
+      <animated.div
         className="card"
         style={!isBrowser ? springStyle : null}
       >
@@ -39,7 +39,7 @@ const OrderSummary = (props) => {
           <HeroIllustration />
         </div>
         <article className="card-content">
-          <h2 className="card-title">Order Summary</h2>
+          <h1 className="card-title">Order Summary</h1>
           <p className="card-description">
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
@@ -48,7 +48,7 @@ const OrderSummary = (props) => {
           <button className="btn btn-primary">Proceed to Payment</button>
           <button className="btn btn-secondary">Cancel Order</button>
         </article>
-      </animated.section>
+      </animated.div>
       <Attribution isVisible={attrVisible} toggleVisibility={toggleAttrVis} />
     </main>
   );
